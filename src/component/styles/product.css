@@ -1,0 +1,77 @@
+.pro_page {
+    background-image: radial-gradient(circle, #eae0b9, #eee4bd, #f2e8c0, #f6edc4, #faf1c8, #fbf2ca, #fcf4cb, #fdf5cd, #fcf4cd, #fbf2ce, #f9f1ce, #f8f0cf);
+    padding: 20px; /* Add padding to the content */
+  }
+  
+  
+section{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    color: #745306;
+}
+
+.cards{
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Add minor border */
+    border-radius: 5px; /* Add border radius */
+    margin-bottom: 10px;
+    background-color: wheat;
+}
+.cards:hover{
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.image_box img{
+    width: 150px;
+    height: 200px;
+}
+.details p:nth-child(1){
+    font-weight: bold;
+}
+.details p:nth-child(2){
+    color: grey;
+    font-size: 0.8rem;
+}
+.details p:nth-child(3){
+    font-weight: bold;
+    color: grey;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    background-color: #676050;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block; /* Ensure the button is displayed as a block element */
+    margin: 0 auto; /* Center the button horizontally */
+    margin-left: 3rem;
+}
+
+button:hover {
+    background-color: #d8ad47;
+}
+.warning {
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    background-color: #ff6f61; /* Coral red background */
+    font-size: 1.2rem; /* Slightly larger font */
+    color: #ffffff; /* White text */
+    font-family: 'Roboto', sans-serif; /* Change font to Roboto */
+    padding: 10px; /* Increase padding for better readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center align text */
+  }
+  
+  
