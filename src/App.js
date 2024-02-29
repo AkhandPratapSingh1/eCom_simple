@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './component/Navbar';
 import ProductPage from './component/ProductPage';
 import CartPage from './component/CartPage';
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
 	const [show, setshow] = useState(true);
@@ -41,6 +42,7 @@ const App = () => {
 
   return (
 	<React.Fragment>
+		<Analytics />
 		<Navbar size={cart.length} setshow={setshow} />
 		{
 			show ? <ProductPage handlefun={handlefun} /> : <CartPage cart={cart} setcart={setcart} onhandleChange={onhandleChange} />

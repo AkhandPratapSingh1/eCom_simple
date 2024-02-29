@@ -1,9 +1,13 @@
 import React from "react";
 import '../component/styles/product.css'
+import { Analytics } from "@vercel/analytics/react"
+
 const CardView =({product_details, handlefun}) =>{
     const {productName,productImageUrl,type_of_product,price} = product_details;
     return(
+        
         <div className="cards">
+            <Analytics />
             <div className="product_image">
             <img src={productImageUrl} />
             </div>

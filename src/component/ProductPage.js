@@ -2,10 +2,12 @@ import { useState } from "react";
 import React from "react";
 import productDetails from "../ProductDetails";
 import CardView from "./CardView";
+import { Analytics } from "@vercel/analytics/react"
 
 const ProductPage= ({handlefun}) =>{
     return(
         <div className="pro_page">
+            <Analytics />
         <section>
             {
                 productDetails.map((product_details) =>

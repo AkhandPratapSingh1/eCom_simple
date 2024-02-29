@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../component/styles/cartPage.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const CartPage = ({ cart, setcart, onhandleChange }) => {
   const [price, setPrice] = useState(0);
@@ -22,6 +23,7 @@ const CartPage = ({ cart, setcart, onhandleChange }) => {
 
   return (
     <article>
+      <Analytics />
       {cart.map((product_details) => (
         <div className="cart_box" key={product_details.id}>
           <div className="cart_img">
